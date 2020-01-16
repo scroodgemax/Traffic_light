@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Traffic_light</string>
+    <string name="red">Червоний</string>
+    <string name="yellow">Жовтий</string>
+    <string name="green">Зелений</string>
+    <string name="traffic_light">Traffic Light!</string>
+</resources>
