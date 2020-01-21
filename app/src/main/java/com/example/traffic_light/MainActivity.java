@@ -30,6 +30,14 @@ private TextView mInfoTextView;
             public void onClick(View v) {
                 mInfoTextView.setText(R.string.yellow);
                 mConstraintLayout.setBackgroundColor(ContextCompat.getColor(MainActivity.this, R.color.yellowColor));
+                Toast toast2 = Toast.makeText(getApplicationContext(),
+                        "Ready!?", Toast.LENGTH_LONG);
+                toast2.setGravity(Gravity.CENTER, 0, 0);
+                LinearLayout toastContainer = (LinearLayout) toast2.getView();
+                ImageView goImageView = new ImageView(getApplicationContext());
+                goImageView.setImageResource(R.drawable.ready);
+                toastContainer.addView(goImageView, 0);
+                toast2.show();
             }
         });
     }
